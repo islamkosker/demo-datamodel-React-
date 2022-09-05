@@ -6,6 +6,7 @@ import {
   View,
   Card,
 } from "@aws-amplify/ui-react"
+import "@aws-amplify/ui-react/styles.css";
 // routes
 import Router from './routes';
 // theme
