@@ -1,12 +1,22 @@
 import { useRef, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 // @mui
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
 import { alpha } from '@mui/material/styles';
 import { Box, Divider, Typography, Stack, MenuItem, Avatar, IconButton } from '@mui/material';
 // components
+
 import MenuPopover from '../../components/MenuPopover';
 // mocks_
 import account from '../../_mock/account';
+
 
 // ----------------------------------------------------------------------
 
@@ -40,7 +50,16 @@ export default function AccountPopover() {
   };
 
   const handleClose = () => {
-    setOpen(null);
+    
+
+    return(
+      <Card>
+        <Image  className="App-logo" alt="logo" />
+        <Heading level={1}>We now have Auth!</Heading>
+      
+       <Button>Sign Out</Button>
+       </Card>
+    );
   };
 
   return (

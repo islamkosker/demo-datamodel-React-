@@ -1,3 +1,11 @@
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react"
 // routes
 import Router from './routes';
 // theme
@@ -8,12 +16,27 @@ import { BaseOptionChartStyle } from './components/chart/BaseOptionChart';
 
 // ----------------------------------------------------------------------
 
-export default function App() {
+
+
+;
+
+function App({ signOut }) {
   return (
     <ThemeProvider>
-      <ScrollToTop />
-      <BaseOptionChartStyle />
-      <Router />
-    </ThemeProvider>
+    <View className="App">
+      <Card>
+        
+        <Heading level={1}>We now have Auth!</Heading>
+      </Card>
+      <Button onClick={signOut}>Sign Out</Button>
+    </View>
+
+ <ScrollToTop />
+ <BaseOptionChartStyle />
+ <Router />
+</ThemeProvider>
+
   );
 }
+
+export default withAuthenticator(App)

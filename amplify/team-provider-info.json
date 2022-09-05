@@ -1,4 +1,22 @@
 {
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-materialkitreact-main-114849-authRole",
+      "UnauthRoleArn": "arn:aws:iam::010368764436:role/amplify-materialkitreact-main-114849-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::010368764436:role/amplify-materialkitreact-main-114849-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-materialkitreact-main-114849-deployment",
+      "UnauthRoleName": "amplify-materialkitreact-main-114849-unauthRole",
+      "StackName": "amplify-materialkitreact-main-114849",
+      "StackId": "arn:aws:cloudformation:us-east-1:010368764436:stack/amplify-materialkitreact-main-114849/b53f13d0-2d10-11ed-a88b-126d6546c5fb",
+      "AmplifyAppId": "dz677gypik2v5"
+    },
+    "categories": {
+      "auth": {
+        "materialkitreact3544888e": {}
+      }
+    }
+  },
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-amplifyc7c40b59800f4-staging-110921-authRole",
