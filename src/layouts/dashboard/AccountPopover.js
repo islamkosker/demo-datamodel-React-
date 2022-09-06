@@ -40,7 +40,7 @@ const MENU_OPTIONS = [
 
 // ----------------------------------------------------------------------
 
-export default function AccountPopover(signOut) {
+function AccountPopover(signOut) {
   const anchorRef = useRef(null);
 
   const [open, setOpen] = useState(null);
@@ -130,3 +130,4 @@ export default function AccountPopover(signOut) {
     </>
   );
 }
+export default withAuthenticator(AccountPopover)
