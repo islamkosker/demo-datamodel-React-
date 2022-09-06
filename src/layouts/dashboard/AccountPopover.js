@@ -123,8 +123,8 @@ export default function AccountPopover(signOut) {
         <MenuItem onClick={handleClose} sx={{ m: 1 }}>
           Logout
         </MenuItem>
-        <MenuItem onClick={handleClose} sx={{ m: 1 }}>
-        <Button onClick={signOut}>Sign Out</Button>
+        <MenuItem onClick={()=>signOut} sx={{ m: 1 }}>
+        <Button >Sign Out</Button>
         </MenuItem>
       </MenuPopover>
     </>
