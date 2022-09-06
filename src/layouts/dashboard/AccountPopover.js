@@ -40,7 +40,7 @@ const MENU_OPTIONS = [
 
 // ----------------------------------------------------------------------
 
-export default function AccountPopover() {
+export default function AccountPopover(signOut) {
   const anchorRef = useRef(null);
 
   const [open, setOpen] = useState(null);
@@ -122,6 +122,9 @@ export default function AccountPopover() {
 
         <MenuItem onClick={handleClose} sx={{ m: 1 }}>
           Logout
+        </MenuItem>
+        <MenuItem onClick={handleClose} sx={{ m: 1 }}>
+        <Button onClick={signOut}>Sign Out</Button>
         </MenuItem>
       </MenuPopover>
     </>

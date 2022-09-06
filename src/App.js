@@ -23,10 +23,10 @@ import { BaseOptionChartStyle } from './components/chart/BaseOptionChart';
 
 function App({ signOut }) {
   return (
-    <ThemeProvider>
+    <ThemeProvider signOut={signOut}>
     <View className="App">
       <Card>
-        
+      <Button onClick={signOut}>Sign Out</Button>
         <Heading level={1}>We now have Auth!</Heading>
       </Card>
       
@@ -34,7 +34,7 @@ function App({ signOut }) {
 
  <ScrollToTop />
  <BaseOptionChartStyle />
- <Button onClick={signOut}>Sign Out</Button>
+
  <Router />
 </ThemeProvider>
 
