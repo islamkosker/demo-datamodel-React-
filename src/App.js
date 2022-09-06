@@ -26,7 +26,7 @@ function App({ signOut }) {
     <ThemeProvider signOut={signOut}>
     <View className="App">
       <Card>
-      <Button onClick={signOut}>Sign Out</Button>
+      <Button onClick={()=>signOut}>Sign Out</Button>
         <Heading level={1}>We now have Auth!</Heading>
       </Card>
       
