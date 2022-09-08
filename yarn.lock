@@ -191,12 +191,12 @@
   dependencies:
     "@aws-amplify/ui-components" "1.7.2"
 
-"@aws-amplify/ui-react@^3.5.0":
-  "integrity" "sha512-F0Sjo+iFEJcyzA0LXzUw+nCrn0HI2TBEa6TKTibsT0qDwnDY3yBh6USwzO365ScHOpHo7G/d9saey1sibB3pBw=="
-  "resolved" "https://registry.npmjs.org/@aws-amplify/ui-react/-/ui-react-3.5.0.tgz"
-  "version" "3.5.0"
+"@aws-amplify/ui-react@^3.5.1":
+  "integrity" "sha512-AEp7cn02so5sijynUXPSMbqoKqylRNByo5rJ9c7QptWoSlB3jDD6nzajFvuMQ5aSkd7hz3M3Hc1qgKh+CT6VeQ=="
+  "resolved" "https://registry.npmjs.org/@aws-amplify/ui-react/-/ui-react-3.5.1.tgz"
+  "version" "3.5.1"
   dependencies:
-    "@aws-amplify/ui" "3.13.1"
+    "@aws-amplify/ui" "3.13.2"
     "@aws-amplify/ui-react-v1" "npm:@aws-amplify/ui-react@1.2.9"
     "@radix-ui/react-accordion" "0.1.6"
     "@radix-ui/react-dropdown-menu" "0.1.6"
@@ -219,10 +219,10 @@
   "resolved" "https://registry.npmjs.org/@aws-amplify/ui/-/ui-2.0.5.tgz"
   "version" "2.0.5"
 
-"@aws-amplify/ui@3.13.1":
-  "integrity" "sha512-EgKcOiSGF0EPJR8ci7WS6mk93G/uH3n/Uc5+WdFClcDeE2j3uPyG80+f6eDJ1bJoIfynKWRjMRyaZCzrXH+vig=="
-  "resolved" "https://registry.npmjs.org/@aws-amplify/ui/-/ui-3.13.1.tgz"
-  "version" "3.13.1"
+"@aws-amplify/ui@3.13.2":
+  "integrity" "sha512-zYHvZ7DAbmYBlOduqq5aJlaQLmNJZc53XqNzNftBACUDOhUHgApoYB0Gc3+GtGHqUT5FVY060dztH4rgsRHUaQ=="
+  "resolved" "https://registry.npmjs.org/@aws-amplify/ui/-/ui-3.13.2.tgz"
+  "version" "3.13.2"
   dependencies:
     "lodash" "4.17.21"
     "style-dictionary" "3.7.0"
@@ -6207,6 +6207,11 @@
     "fast-base64-decode" "^1.0.0"
     "isomorphic-unfetch" "^3.0.0"
     "js-cookie" "^2.2.1"
+
+"amplify@^0.0.11":
+  "integrity" "sha512-RkVzlUUUczGhjRWTX3QXEPzgPScdUXvmthgvcNpCQHfxshvxLPTdiLP6kLaUb/eo8IpnjLpKqUWxTIT97c8xew=="
+  "resolved" "https://registry.npmjs.org/amplify/-/amplify-0.0.11.tgz"
+  "version" "0.0.11"
 
 "anser@^1.4.9":
   "integrity" "sha512-hCv9AqTQ8ycjpSd3upOJd7vFwW1JaoYQ7tpham03GJ1ca8/65rqn0RpaWpItOAd6ylW9wAw6luXYPJIyPFVOww=="

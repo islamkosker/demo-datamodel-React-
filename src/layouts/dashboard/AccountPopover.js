@@ -1,7 +1,9 @@
 import { useRef, useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, Route ,} from 'react-router-dom';
+import './AccountPopover.css'
 // @mui
 import {
+  Authenticator,
   withAuthenticator,
   Button,
   Heading,
@@ -16,6 +18,8 @@ import { Box, Divider, Typography, Stack, MenuItem, Avatar, IconButton } from '@
 import MenuPopover from '../../components/MenuPopover';
 // mocks_
 import account from '../../_mock/account';
+
+
 
 
 // ----------------------------------------------------------------------
@@ -40,7 +44,7 @@ const MENU_OPTIONS = [
 
 // ----------------------------------------------------------------------
 
-function AccountPopover(signOut) {
+function  AccountPopover(signOut) {
   const anchorRef = useRef(null);
 
   const [open, setOpen] = useState(null);
@@ -49,18 +53,6 @@ function AccountPopover(signOut) {
     setOpen(event.currentTarget);
   };
 
-  const handleClose = () => {
-    
-
-    return(
-      <Card>
-        <Image  className="App-logo" alt="logo" />
-        <Heading level={1}>We now have Auth!</Heading>
-      
-       <Button>Sign Out</Button>
-       </Card>
-    );
-  };
 
   return (
     <>
@@ -88,7 +80,7 @@ function AccountPopover(signOut) {
       <MenuPopover
         open={Boolean(open)}
         anchorEl={open}
-        onClose={handleClose}
+       
         sx={{
           p: 0,
           mt: 1.5,
@@ -112,22 +104,28 @@ function AccountPopover(signOut) {
 
         <Stack sx={{ p: 1 }}>
           {MENU_OPTIONS.map((option) => (
-            <MenuItem key={option.label} to={option.linkTo} component={RouterLink} onClick={handleClose}>
+            <MenuItem key={option.label} to={option.linkTo} component={RouterLink} >
               {option.label}
             </MenuItem>
           ))}
         </Stack>
 
         <Divider sx={{ borderStyle: 'dashed' }} />
-
-        <MenuItem onClick={handleClose} sx={{ m: 1 }}>
-          Logout
+ 
+  
+        <MenuItem  sx={{ m: 1 }}>
+       
+        <Authenticator>
+      {({ signOut, user }) => (
+        <main>
+          <button className='btn btn-danger' onClick={signOut}>Sign out</button>
+        </main>
+      )}
+   </Authenticator>
         </MenuItem>
-        <MenuItem onClick={()=>signOut} sx={{ m: 1 }}>
-        <Button >Sign Out</Button>
-        </MenuItem>
+  
       </MenuPopover>
     </>
   );
 }
-export default withAuthenticator(AccountPopover)
+export default(AccountPopover)

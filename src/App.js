@@ -5,8 +5,9 @@ import {
   Image,
   View,
   Card,
+  Authenticator,
 } from "@aws-amplify/ui-react"
-
+import { Auth } from "aws-amplify";
 // routes
 import Router from './routes';
 // theme
@@ -15,30 +16,25 @@ import ThemeProvider from './theme';
 import ScrollToTop from './components/ScrollToTop';
 import { BaseOptionChartStyle } from './components/chart/BaseOptionChart';
 
+
 // ----------------------------------------------------------------------
 
 
 
 ;
 
-function App({ signOut }) {
+ function App({signOut}) {
   return (
-    <ThemeProvider signOut={signOut}>
-    <View className="App">
-      <Card>
-      <Button onClick={()=>signOut}>Sign Out</Button>
-        <Heading level={1}>We now have Auth!</Heading>
-      </Card>
-      
-    </View>
+  
+    <ThemeProvider >
 
  <ScrollToTop />
  <BaseOptionChartStyle />
-
  <Router />
 </ThemeProvider>
 
   );
 }
 
-export default withAuthenticator(App)
+
+export default (App);

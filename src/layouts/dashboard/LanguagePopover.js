@@ -1,5 +1,14 @@
 import { useRef, useState } from 'react';
 // material
+import {
+  Authenticator,
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
 import { alpha } from '@mui/material/styles';
 import { Box, MenuItem, Stack, IconButton } from '@mui/material';
 // components
@@ -74,8 +83,10 @@ export default function LanguagePopover() {
 
               {option.label}
             </MenuItem>
+
           ))}
         </Stack>
+       
       </MenuPopover>
     </>
   );
